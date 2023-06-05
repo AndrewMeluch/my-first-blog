@@ -11,7 +11,10 @@
     Stop!
     <ul><li>For the stomach</li><li>For the road</li><li>For the herring</li><for the scone</ul>
     <section>
-        Time is gone <br>
+        {% for pith in posts %}
+        <H1>{{ pith.title }}</H1>
+        <P>{{ pith.text|linebreaksbr }}</P> <br>
+        {% endfor %}
         Forver it is goine
         <aside>Or is it?</aside>
     </section>
